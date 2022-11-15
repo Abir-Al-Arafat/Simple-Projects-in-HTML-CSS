@@ -1,3 +1,9 @@
+/* variables for gradient color */
+:root{
+    --primary: rgba(40, 48, 72, 0.897);
+    --secondary: rgba(11, 52, 66, 0.096);
+}
+
 /* Reset */
 *{
     box-sizing: border-box;
@@ -25,13 +31,61 @@ p{
     margin: 10px 0;
 }
 
-/* Navigation Bar */
-
+/* Utility classes */
 .container {
     margin: auto;
     max-width: 1000px;
     overflow: auto;
 }
+
+.text-primary{
+    color: #f8942f;
+}
+
+.lead{
+    font-size: 20px;
+}
+
+.btn{
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-light{
+    background: #fff;
+    color: #222;
+}
+
+.btn:hover{
+    background: #222;
+    color: #f8942f;
+}
+
+.bg-dark{
+    background: #333;
+    color: #fff;
+}
+
+.bg-light{
+    background: #f4f4f4;
+    color: #333;
+}
+
+.bg-primary{
+    background: #f8942f;
+    color: #333;
+}
+
+.clr{
+    clear: both;
+}
+
+/* Navigation Bar */
 
 #navbar{
     background: #222;
@@ -67,7 +121,69 @@ p{
 
 #navbar ul li a:hover,
 #navbar ul li a.active{
-    background: red;
-    color: #111;
+    background: #333;
+    color: #f8942f;
     cursor: pointer;
+}
+
+/* showcase */
+#showcase{
+    background: linear-gradient(135deg, var(--primary), var(--secondary)), url(../img/pexels-felipe-hueb-2747901.jpg) no-repeat center center/cover;
+    /* height: 50vh; */
+    height: 400px;
+}
+
+#showcase .showcase-content{
+    color: #fff;
+    text-align: center;
+    padding-top: 10vh;
+}
+
+#showcase .showcase-content h1{
+    font-size: 50px;
+    line-height: 1.3em;
+}
+
+#showcase .showcase-content p{
+    margin-bottom: 35px;
+}
+
+/* Home information */
+#home-info {
+    height: 400px;
+}
+
+#home-info .info-img{
+    background: url(../img/info-img-c.jpg) no-repeat center top/cover;
+    float: left;
+    width: 50%;
+    min-height: 100%;
+}
+
+#home-info .info-content{
+    float: right;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    padding: 30px;
+    overflow: hidden;
+}
+
+#home-info .info-content p{
+    padding-bottom: 25px;
+}
+
+/* Features */
+#features .box{
+    float: left;
+    width: 33.3%;
+    padding: 20px;
+    text-align: center;
+}
+
+#main-footer{
+    text-align: center;
+    background: #333;
+    color: #f4f4f4;
+    padding: 10px;
 }
