@@ -64,6 +64,7 @@ p{
 .btn:hover{
     background: #222;
     color: #f8942f;
+    border-radius: 0;
 }
 
 .bg-dark{
@@ -174,7 +175,7 @@ p{
 }
 
 /* Features */
-#features .box{
+.box{
     float: left;
     width: 33.3%;
     padding: 20px;
@@ -258,4 +259,42 @@ p{
     /* text-shadow: 1px 1px #222; */
     display: inline;
     opacity: 0.9;
+}
+
+/* Contact Form */
+
+#contact-form h1{
+    margin-top: 20px;
+}
+
+#contact-form .form-group{
+    margin-bottom: 20px;
+}
+
+#contact-form .form-group label{
+    display: block;
+    /* margin-left: 10px; */
+}
+
+#contact-form .form-group input,
+#contact-form .form-group textarea{
+    display: block;
+    padding: 5px;
+    /* margin-left: 10px; */
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+#contact-form .form-group textarea{
+    height: 150px;
+}
+
+#contact-form .form-group input:focus,
+#contact-form .form-group textarea:focus{
+    outline: none;
+    border-color: #f8942f;
+}
+
+#contact-info{
+    margin-top: 20px;
 }
