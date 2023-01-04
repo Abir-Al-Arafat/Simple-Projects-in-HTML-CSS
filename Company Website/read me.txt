@@ -1,0 +1,3 @@
+1. JavaScript added for navbar transition
+2. JQuery added for smooth scrolling transition along the pages
+3. LIGHTBOX (JS library) is implemented for displaying images in cases section

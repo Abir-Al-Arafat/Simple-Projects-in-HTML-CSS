@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <!-- for cases section -->
+    <link rel="stylesheet" href="/css/lightbox.min.css">
     <link rel="stylesheet" href="/css/utilities.css">
     <link rel="stylesheet" href="/css/style.css">
     <title>Welcome | Finance Media</title>
@@ -101,20 +102,54 @@
 
             <div class="row">
                 <div class="column">
-                    <img src="img/cases/case-1.jpg" alt="">
-                    <img src="img/cases/case-2.jpg" alt="">
+                    <a href="img/cases/case-1.jpg" data-lightbox="cases" data-title = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, molestias.">
+                        <img src="img/cases/case-1.jpg" alt="">
+                    </a>
+
+                    <a href="img/cases/case-2.jpg" data-lightbox="cases" data-title = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, molestias.">
+                        <img src="img/cases/case-2.jpg" alt="">
+                    </a>
+                    <!-- <img src="img/cases/case-1.jpg" alt=""> -->
+                    <!-- <img src="img/cases/case-2.jpg" alt=""> -->
                 </div>
                 <div class="column">
-                    <img src="img/cases/case-3.jpg" alt="">
-                    <img src="img/cases/case-4.jpg" alt="">
+
+                    <a href="img/cases/case-3.jpg" data-lightbox="cases" data-title = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, molestias.">
+                        <img src="img/cases/case-3.jpg" alt="">
+                    </a>
+
+                    <a href="img/cases/case-4.jpg" data-lightbox="cases" data-title = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, molestias.">
+                        <img src="img/cases/case-4.jpg" alt="">
+                    </a>
+
+                    <!-- <img src="img/cases/case-3.jpg" alt="">
+                    <img src="img/cases/case-4.jpg" alt=""> -->
                 </div>
                 <div class="column">
-                    <img src="img/cases/case-5.jpg" alt="">
-                    <img src="img/cases/case-6.jpg" alt="">
+
+                    <a href="img/cases/case-5.jpg" data-lightbox="cases" data-title = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, molestias.">
+                        <img src="img/cases/case-5.jpg" alt="">
+                    </a>
+
+                    <a href="img/cases/case-6.jpg" data-lightbox="cases" data-title = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, molestias.">
+                        <img src="img/cases/case-6.jpg" alt="">
+                    </a>
+
+                    <!-- <img src="img/cases/case-5.jpg" alt="">
+                    <img src="img/cases/case-6.jpg" alt=""> -->
                 </div>
                 <div class="column">
-                    <img src="img/cases/case-7.jpg" alt="">
-                    <img src="img/cases/case-8.jpg" alt="">
+
+                    <a href="img/cases/case-7.jpg" data-lightbox="cases" data-title = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, molestias.">
+                        <img src="img/cases/case-7.jpg" alt="">
+                    </a>
+
+                    <a href="img/cases/case-8.jpg" data-lightbox="cases" data-title = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, molestias.">
+                        <img src="img/cases/case-8.jpg" alt="">
+                    </a>
+
+                    <!-- <img src="img/cases/case-7.jpg" alt="">
+                    <img src="img/cases/case-8.jpg" alt=""> -->
                 </div>
             </div>
         </section>
@@ -216,6 +251,13 @@
         <p>Copyright &copy; 2022 - Finance Media</p>
     </footer>
 
+    <!-- JQuery for smooth transition while scrolling-->
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+
+    <!-- for cases section -->
+    <script src="js/lightbox.min.js"></script>
+
+    <!-- for navbar visibility & smooth scrolling -->
     <script src="script.js"></script>
 </body>
 </html>
