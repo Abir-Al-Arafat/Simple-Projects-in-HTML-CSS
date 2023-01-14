@@ -28,9 +28,10 @@ body{
     color: #f4f4f4;
     height: 100vh;
     position: relative;
+    /* z-index: 1; */
 }
 
-#showcase:before{
+#showcase::before{
     content: '';
     background: url('../img/bg.jpg') no-repeat center center/cover;
     position: absolute;
