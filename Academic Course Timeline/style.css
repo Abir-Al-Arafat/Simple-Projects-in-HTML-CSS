@@ -65,16 +65,28 @@ h3{
     background: var(--secondary-color);
     border-bottom: 5px solid #f4f4f4;
     transition: all 0.4s ease-in-out;
+
+    visibility: hidden;
+    opacity: 0;
 }
 
 /* Right Side */
 #timeline ul li:nth-child(odd) div{
     left: 2rem;
+    transform: translateX(200px);
 }
 
 /* Left Side */
 #timeline ul li:nth-child(even) div{
     left: -26.5rem;
+    transform: translateX(-200px);
+}
+
+/* show boxes */
+#timeline ul li.show div{
+    transform: none;
+    visibility: visible;
+    opacity: 1;
 }
 
 /* Line Gaps / Dots */
@@ -87,8 +99,13 @@ h3{
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    background: var(--secondary-color);
+    background: inherit;
     transition: all 0.4s ease-in-out;
+}
+
+/* Line Gaps / Dots visibility */
+#timeline ul li.show::after{
+    background: var(--secondary-color);
 }
 
 /* arrows */
