@@ -88,6 +88,67 @@ h1, h2, h3, h4, h5, h6{
     opacity: 0.8;
 }
 
+.card{
+    background: #fff;
+    padding: 1rem;
+}
+
+.bg-dark{
+    background-color: var(--dark-color);
+    color: #f3f3f3;
+}
+
+.bg-primary{
+    background-color: var(--primary-color);
+    color: #f3f3f3;
+}
+
+.bg-secondary{
+    background-color: var(--secondary-color);
+    color: #f3f3f3;
+}
+
+.py-1{
+    padding: 1.5rem 0;
+}
+
+.py-2{
+    padding: 2rem 0;
+}
+
+.py-3{
+    padding: 3rem 0;
+}
+
+.p-1{
+    padding: 1.5rem;
+}
+
+.p-2{
+    padding: 2rem;
+}
+
+.p-3{
+    padding: 3rem;
+}
+
+.bg-dark h1,
+.bg-dark h2,
+.bg-dark h3,
+.bg-dark a,
+.bg-primary h1,
+.bg-primary h2,
+.bg-primary h3,
+.bg-primary a,
+.bg-secondary h1,
+.bg-secondary h2,
+.bg-secondary h3,
+.bg-secondary a{
+    color: #f3f3f3;
+}
+
+
+
 /* Navigation */
 #main-nav{
     background: #fff;
@@ -171,4 +232,29 @@ h1, h2, h3, h4, h5, h6{
 
 #showcase .showcase-content p{
     margin-bottom: 1rem;
+    text-align: justify;
+}
+
+/* Articles */
+#home-articles .articles-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+/* any first child of this class */
+#home-articles .articles-container > *:first-child{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    /* spans column */
+    grid-column: 1 / span 2;
+}
+
+#home-articles .articles-container > *:last-child{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    /* spans column */
+    grid-column: 2 / span 2;
 }
