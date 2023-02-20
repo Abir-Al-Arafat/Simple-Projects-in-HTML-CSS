@@ -136,6 +136,10 @@ p{
     padding: 3rem;
 }
 
+.l-heading{
+    font-size: 3rem;
+}
+
 .bg-dark h1,
 .bg-dark h2,
 .bg-dark h3,
@@ -315,4 +319,32 @@ p{
     margin-top: 10px;
     padding: 8px 10px;
     border: none;
+}
+
+/* Articles Page */
+#categories ul li{
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #aaa;
+    letter-spacing: 1px;
+}
+
+#categories ul li a:hover{
+    color: var(--primary-color);
+}
+
+#categories ul li:hover{
+    border-bottom: 1px solid var(--primary-color);
+    cursor: pointer;
+}
+
+#article .meta{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #eee;
+    padding: 0.7rem;
+}
+
+#article .meta .category{
+    margin: 0 0;
 }
