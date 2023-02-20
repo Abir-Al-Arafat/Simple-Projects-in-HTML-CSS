@@ -206,7 +206,8 @@ p{
 
 #main-nav ul li a:hover{
     background: var(--light-color);
-    color: #333;
+    /* color: #333; */
+    color: var(--primary-color);
 }
 
 #main-nav .social{
@@ -270,6 +271,7 @@ p{
     grid-column: 1 / span 2;
 }
 
+/* any last child of this class */
 #home-articles .articles-container > *:last-child{
     display: grid;
     grid-template-columns: 1fr 1fr;
