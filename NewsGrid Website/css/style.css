@@ -258,3 +258,46 @@ h1, h2, h3, h4, h5, h6{
     /* spans column */
     grid-column: 2 / span 2;
 }
+
+/* Footer */
+#main-footer{
+    background: var(--dark-color);
+    color: #fff;
+}
+
+#main-footer img{
+    width: 150px;
+}
+
+#main-footer a{
+    color: #fff;
+}
+
+#main-footer .footer-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+/* selects last child of the class */
+#main-footer .footer-container > *:last-child{
+    background: #444;
+    grid-column: 1 / span 5;
+    /* justify-self: center; */
+    padding: 10px;
+    text-align: center;
+}
+
+#main-footer a:hover{
+    color: var(--primary-color);
+}
+
+#main-footer .footer-container input,
+#main-footer .footer-container button{
+    width: 75%;
+    margin-top: 10px;
+    padding: 8px 10px;
+    border: none;
+}
