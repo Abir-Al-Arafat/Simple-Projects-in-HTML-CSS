@@ -44,6 +44,10 @@ h1, h2, h3, h4, h5, h6{
     letter-spacing: 2px;
 }
 
+p{
+    text-align: justify;
+}
+
 /* Utility */
 .container{
     max-width: var(--max-width);
@@ -145,9 +149,20 @@ h1, h2, h3, h4, h5, h6{
 .bg-secondary h3,
 .bg-secondary a{
     color: #f3f3f3;
+    letter-spacing: 2px;
 }
 
+/* About page */
+.page-container{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 1rem;
+    margin: 2rem 0;
+}
 
+.page-container > *:first-child{
+    grid-row: 1 / span 3;
+}
 
 /* Navigation */
 #main-nav{
