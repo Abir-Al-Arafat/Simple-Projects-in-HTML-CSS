@@ -165,8 +165,16 @@ ul{
     margin-top: 2rem;
 }
 
-.company-logo{
-    height: 36px;
+/* .company-logo{
+    height: 40px;
+} */
+
+.company-logos img{
+    width: 10%;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    /* removes white background */
+    mix-blend-mode: color-burn;
 }
 
 .companies-header{
