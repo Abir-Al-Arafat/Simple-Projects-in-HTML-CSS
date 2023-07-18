@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap');
 
+/* reset */
+
 *{
     margin: 0;
     padding: 0;
@@ -41,4 +43,30 @@ p{
 a{
     text-decoration: none;
     display: inline-block;
+}
+
+/* utility classes */
+
+.small-bold-text{
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.container{
+    max-width: 1180px;
+    margin: 0 auto;
+    padding-inline: var(--padding-inline-section);
+}
+
+.top-banner{
+    background: url(./assets/top-banner-bg.png);
+    background-size: 300px;
+    /* background-repeat: no-repeat; */
+    background-color: #4fb3d4;
+}
+
+.banner-text{
+    color: #f4f4f4;
+    padding: 15px 30px;
+    text-align: center;
 }
