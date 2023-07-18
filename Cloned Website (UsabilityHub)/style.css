@@ -139,3 +139,38 @@ ul{
     justify-content: flex-end;
     gap: 40px;
 }
+
+/* header section */
+
+.header-section{
+    margin-top: 3rem;
+    justify-content: space-between;
+}
+
+.header-right img{
+    width: 500px;
+}
+
+.header-left{
+    max-width: 40vw;
+}
+
+.header-left .primary-btn{
+    margin-top: 2rem;
+}
+
+/* company section */
+.company-logos{
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.company-logo{
+    height: 36px;
+}
+
+.companies-header{
+    margin-top: 5rem;
+    text-align: center;
+    color: var(--primary-text-color);
+}
