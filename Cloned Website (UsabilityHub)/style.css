@@ -218,3 +218,22 @@ ul{
     /* margin-top: 2rem; */
     text-align: center;
 }
+
+/* feature description section */
+.feature-desc{
+    margin-top: 30px;
+}
+
+.big-feature-container{
+    gap: 30px;
+}
+
+.feature-img img{
+    width: 100%;
+}
+
+.feature-desc{
+    max-width: 40vw;
+    flex-direction: column;
+    align-items: flex-start;
+}
