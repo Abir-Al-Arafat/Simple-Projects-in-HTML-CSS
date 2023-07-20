@@ -220,7 +220,7 @@ ul{
 }
 
 /* feature description section */
-.feature-desc{
+.big-feature-section{
     margin-top: 30px;
 }
 
@@ -236,4 +236,66 @@ ul{
     max-width: 40vw;
     flex-direction: column;
     align-items: flex-start;
+}
+
+/* examples section */
+.examples-section{
+    margin-top: 1rem;
+}
+
+.examples-header{
+    text-align: center;
+}
+
+.examples-header a i{
+    margin-left: 4px;
+}
+
+.examples-heading-text{
+    margin-bottom: 1.5rem;
+}
+
+.examples-area{
+    margin-top: 2rem;
+    justify-content: space-between;
+}
+
+.examples-card{
+    width: 23%;
+    min-height: 300px;
+    position: relative;
+    background: #111;
+    transition: all 0.2s ease-in-out;
+}
+
+.examples-card:hover{
+    box-shadow: 0 0 10px #888;
+}
+
+.examples-card:nth-child(1){
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.8)), url('./assets/example_images/example-image-1.jpeg');
+    background-size: cover;
+}
+
+.examples-card:nth-child(2){
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.8)), url('./assets/example_images/example-image-2.jpeg');
+    background-size: cover;
+}
+
+.examples-card:nth-child(3){
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.8)), url('./assets/example_images/example-image-3.jpeg');
+    background-size: cover;
+}
+
+.examples-card:nth-child(4){
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.8)), url('./assets/example_images/example-image-4.jpeg');
+    background-size: cover;
+}
+
+.card-text{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    color: #f4f4f4;
 }
